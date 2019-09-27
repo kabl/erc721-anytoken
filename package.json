@@ -1,0 +1,27 @@
+{
+  "name": "nft-photo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "truffle test",
+    "coverage": "solidity-coverage",
+    "lint": "solhint contracts/*",
+    "build": "truffle compile",
+    "flat": "truffle-flattener contracts/NFTPhotoToken.sol > ./Flat.sol"
+  },
+  "author": "kabl",
+  "license": "MIT",
+  "devDependencies": {
+    "solhint": "^1.4.0",
+    "solidity-coverage": "^0.5.11",
+    "truffle-flattener": "^1.2.10"
+  },
+  "dependencies": {
+    "openzeppelin-solidity": "^2.3.0",
+    "truffle-hdwallet-provider": "^1.0.17"
+  }
+}

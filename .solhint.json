@@ -1,0 +1,14 @@
+{                                              
+    "extends": "default",
+    "plugins": ["security"],                   
+    "rules": {                                 
+        "indent": ["error", 4],                
+        "quotes": ["error", "double"],         
+        "max-line-length": ["error", 120],
+        "const-name-snakecase": false,
+        "no-empty-blocks": false,
+        "compiler-fixed": false,
+        "not-rely-on-time": false,
+        "no-inline-assembly": false
+    }                                          
+}  
