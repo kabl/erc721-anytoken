@@ -1,5 +1,5 @@
 {
-  "name": "nft-photo",
+  "name": "nft-any-token",
   "version": "1.0.0",
   "description": "",
   "main": "truffle-config.js",
@@ -11,7 +11,7 @@
     "coverage": "solidity-coverage",
     "lint": "solhint contracts/*",
     "build": "truffle compile",
-    "flat": "truffle-flattener contracts/NFTPhotoToken.sol > ./Flat.sol"
+    "flat": "truffle-flattener contracts/AnyNFTToken.sol > ./Flat.sol"
   },
   "author": "kabl",
   "license": "MIT",

@@ -4,3 +4,5 @@ coverage
 coverage.json
 Flat.sol
 package-lock.json
+notes.txt
+exportCredential.sh

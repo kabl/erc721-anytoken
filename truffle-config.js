@@ -1,7 +1,14 @@
 // Required for Rinkeby deployment 
 var HDWalletProvider = require("truffle-hdwallet-provider");
-var privateKey = "<your private key here>";
-var rinkebyEndpoint = "https://rinkeby.infura.io/v3/<INFURA KEY>";
+const PRIVATE_KEY = process.env.MNEMONIC
+const INFURA_KEY = process.env.INFURA_KEY
+
+if (!PRIVATE_KEY || !INFURA_KEY) {
+  console.error("Please set the private key and infura key.")
+  return
+}
+
+var rinkeby_json_rpc = "https://rinkeby.infura.io/v3/" + INFURA_KEY;
 
 
 module.exports = {
@@ -12,7 +19,7 @@ module.exports = {
       network_id: "*" // Match any network id
     },
     rinkeby: {
-      provider: () => new HDWalletProvider(privateKey, rinkebyEndpoint),
+      provider: () => new HDWalletProvider(PRIVATE_KEY, rinkeby_json_rpc),
       gasPrice: 50000000000, // 50 gwei,
       gas: 4600000,
       network_id: 4,
