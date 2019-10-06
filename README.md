@@ -25,7 +25,63 @@ truffle deploy --network rinkeby
 
 ## Deployment History
 
-2019-09-27 First
+### 2019-09-30 First (Main Net)
+
+```text
+2_deploy_any.js
+===============
+
+   Deploying 'AnyToken'
+   --------------------
+   > transaction hash:    0x08087ba5361ccc9737b9fc6d93d784892aa8e6da3b346f184a8574e7dee39ce4
+   > Blocks: 0            Seconds: 14
+   > contract address:    0xc86AD6244B539D87e77D0d7a5aD7cB6ca9E69eDd
+   > block number:        8652160
+   > block timestamp:     1569874486
+   > account:             0x3dC2cb9ffbD1DF947E19ED308D9a7EAF98410426
+   > balance:             0.03642784
+   > gas used:            4238144
+   > gas price:           15 gwei
+   > value sent:          0 ETH
+   > total cost:          0.06357216 ETH
+
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.06357216 ETH
+
+
+Summary
+=======
+> Total deployments:   1
+> Final cost:          0.06357216 ETH
+```
+
+### 2019-09-30 Second (Rinkeby)
+
+```text
+2_deploy_any.js
+===============
+
+   Deploying 'AnyToken'
+   --------------------
+   > transaction hash:    0x816d3adc50452c76f57cb45ee80e7c1fc477ecd336896a99686c4f788ba37166
+   > Blocks: 0            Seconds: 9
+   > contract address:    0x52Ed638D50f5B5825a98552615648c6dd167b5AC
+   > block number:        5182357
+   > block timestamp:     1569874332
+   > account:             0x3dC2cb9ffbD1DF947E19ED308D9a7EAF98410426
+   > balance:             2.587850704527011172
+   > gas used:            4238144
+   > gas price:           15 gwei
+   > value sent:          0 ETH
+   > total cost:          0.06357216 ETH
+
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.06357216 ETH
+```
+
+### 2019-09-27 First (Rinkeby)
 
 ```text
 2_deploy_nft.js
